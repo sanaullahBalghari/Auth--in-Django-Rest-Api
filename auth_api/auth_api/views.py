@@ -18,8 +18,6 @@ def example_view(request, format=None):
 
 @api_view(['POST', 'GET'])
 def register_user(request):
-    print('yes here')
-
     data=request.data 
     print(data)
     if 'password' in data:
